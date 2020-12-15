@@ -2,6 +2,21 @@ package com.company;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
+
+/*
+Using OWASP Validation Regex
+We can also use OWASP Validation Regex which are considered to be very safe. Below regular expression can be used to check for a valid IP Address.
+
+^(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\.(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\.(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\.(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)$
+
+
+ESAPI validation routine can also be used which provides the following regular expression.
+
+Validator.IPAddress=^(?:(?:25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\\.){3}(?:25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)$
+
+ */
+
+
 public class ValidateIPAddress {
 
     private static final String INET4ADDRESS = "172.8.9.28";
